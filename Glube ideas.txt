@@ -1,0 +1,19 @@
+Enrique
+- What's the glube supposed to do when the player is far from it?
+- What's the glube supposed to do when the player comes near to them?
+- How does the player interact with the glube?
+
+Richard
+
+1. Bounce around mostly in place but progressing in one direction. Randomized is fine
+Using physics ideally
+
+2. If it’s been longer than cooldown time in seconds since the last time (if ever) a player entered a “proximity collider” then it should Jump randomly
+
+3. Player interacts with glube by getting within the players grab radius collider and pressing the one button
+(Until/if we implement fighting there’s only one button to pick up and throw)
+When a player picks up a glube, we should destroy that glube and then activate the shoulder-mounted one attached to the player
+And because its scope; an instantaneous change in location is fine. We can mask it with a puff of smoke/particles
+When the shoulder-mounted glube is within deposit distance of the players trash can, glube should jump from the players shoulder into that players trashcan. This should be a third and completely separate blueprint 
+
+4. Glubes spawn from one of the three pipes in the wall. Each pipe will be an identical blueprint but in a different world position and rotation
